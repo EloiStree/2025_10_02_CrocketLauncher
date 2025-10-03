@@ -10,20 +10,32 @@
 bool var_is_pressing = false;
 
 
+//If you inversed the cable order
 // #define L298N_PIN1 35
 // #define L298N_PIN2 36
 // #define L298N_PIN3 37
 // #define L298N_PIN4 38
-
 
 #define L298N_PIN1 38
 #define L298N_PIN2 37
 #define L298N_PIN3 36
 #define L298N_PIN4 35
 
+// Example for ESP32-S3 (Arduino core)
+const int STEP_PIN1 = 39;   
+const int STEP_PIN2 = 40;
+const int STEP_PIN3 = 41;
+const int STEP_PIN4 = 42;
+
+// Speed in milliseconds per step (smaller = faster)
+int stepDelay = 5;  
 
 const float MOTOR_DELAY_CLOSE =1500;
 const float MOTOR_DELAY_OPEN =1000;
+
+
+const int MOTOR_STEP_CLOSE =360;
+const int MOTOR_STEP_OPEN =360;
 
 
 
@@ -36,6 +48,11 @@ void setup() {
   pinMode(L298N_PIN2, OUTPUT);
   pinMode(L298N_PIN3, OUTPUT);
   pinMode(L298N_PIN4, OUTPUT);
+  pinMode(STEP_PIN1, OUTPUT);
+  pinMode(STEP_PIN2, OUTPUT);
+  pinMode(STEP_PIN3, OUTPUT);
+  pinMode(STEP_PIN4, OUTPUT);
+
 
 
   Serial.begin(9600);  
@@ -45,7 +62,60 @@ void setup() {
   Serial.println("UART2 initialized.");
 }
 
+//---
 
+
+// Clockwise step
+void stepCW() {
+  digitalWrite(STEP_PIN1, HIGH); digitalWrite(STEP_PIN2, LOW);  digitalWrite(STEP_PIN3, LOW);  digitalWrite(STEP_PIN4, LOW);  delay(stepDelay);
+  digitalWrite(STEP_PIN1, LOW);  digitalWrite(STEP_PIN2, HIGH); digitalWrite(STEP_PIN3, LOW);  digitalWrite(STEP_PIN4, LOW);  delay(stepDelay);
+  digitalWrite(STEP_PIN1, LOW);  digitalWrite(STEP_PIN2, LOW);  digitalWrite(STEP_PIN3, HIGH); digitalWrite(STEP_PIN4, LOW);  delay(stepDelay);
+  digitalWrite(STEP_PIN1, LOW);  digitalWrite(STEP_PIN2, LOW);  digitalWrite(STEP_PIN3, LOW);  digitalWrite(STEP_PIN4, HIGH); delay(stepDelay);
+}
+
+// Counterclockwise step
+void stepCCW() {
+  digitalWrite(STEP_PIN1, LOW);  digitalWrite(STEP_PIN2, LOW);  digitalWrite(STEP_PIN3, LOW);  digitalWrite(STEP_PIN4, HIGH); delay(stepDelay);
+  digitalWrite(STEP_PIN1, LOW);  digitalWrite(STEP_PIN2, LOW);  digitalWrite(STEP_PIN3, HIGH); digitalWrite(STEP_PIN4, LOW);  delay(stepDelay);
+  digitalWrite(STEP_PIN1, LOW);  digitalWrite(STEP_PIN2, HIGH); digitalWrite(STEP_PIN3, LOW);  digitalWrite(STEP_PIN4, LOW);  delay(stepDelay);
+  digitalWrite(STEP_PIN1, HIGH); digitalWrite(STEP_PIN2, LOW);  digitalWrite(STEP_PIN3, LOW);  digitalWrite(STEP_PIN4, LOW);  delay(stepDelay);
+}
+
+void stepsCCW(int count, int pause_time=500) {
+
+  for(int i = 0; i < count; i++){
+    stepCCW();
+
+  }
+  delay(pause_time); // short pause
+
+}
+void stepsCW(int count, int pause_time=500) {
+
+  for(int i = 0; i < count; i++){
+    stepCW();
+
+  }
+  delay(pause_time); // short pause
+
+}
+
+void steps_close(){
+
+stepsCCW(MOTOR_STEP_CLOSE,200);
+
+}
+void steps_open(){
+
+stepsCW(MOTOR_STEP_OPEN,200);
+
+}
+
+
+
+
+
+//---
 void l298n_start_pressing(){
 
   digitalWrite(L298N_PIN1, HIGH);
@@ -88,6 +158,8 @@ void press() {
   digitalWrite(LED, HIGH);  
   Serial.println("Pressing");
   l298n_press();
+  delay(20);
+  steps_close();
   delay(1000);
 }
 
@@ -96,6 +168,8 @@ void release() {
   digitalWrite(LED, LOW);  
   Serial.println("Releasing");
   l298n_release();
+  delay(20);
+  steps_open();
   delay(1000);
 }
 
@@ -109,6 +183,16 @@ void loop() {
       release();
     }
   }
+
+   if (Serial.available()) {
+      // Read the incoming data and send it to the Serial monitor
+      byte incomingByte = Serial.read();
+        char c = (char)incomingByte;
+        Serial.print("Received: ");
+        Serial.println(c);
+
+  }
+
 
   // UART2 handling
   if (Serial2.available()) {
