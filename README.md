@@ -15,6 +15,9 @@ The hardware is almost the same as if you would launch crocket.
 
 ----------
 
+Electronic Bluetooth Archived App to control the device from your phone:  
+https://bluetooth-electronics.en.softonic.com/android?ex=RAMP-3582.2&rex=true  
+
 
 <img width="1126" height="492" alt="image" src="https://github.com/user-attachments/assets/81c4f76f-63c0-4f1b-9317-3eac34f50e15" />
 
