@@ -87,3 +87,56 @@ void loop() {
   // Your main loop continues running without blocking
 }
 ```
+
+
+Websocket
+```
+#include <WiFi.h>
+#include <ArduinoWebsockets.h>
+
+using namespace websockets;
+
+const char* apSSID = "ESP32_WS_AP";
+const char* apPassword = "12345678";
+
+WebsocketsServer server;
+WebsocketsClient client;
+
+void setup() {
+  Serial.begin(115200);
+
+  // Start the ESP32 in AP mode
+  WiFi.softAP(apSSID, apPassword);
+  Serial.println("ESP32 AP started");
+  Serial.print("AP IP address: ");
+  Serial.println(WiFi.softAPIP());
+
+  // Start WebSocket server on port 8080
+  server.listen(8080);
+  Serial.println("WebSocket server started on port 8080");
+}
+
+void loop() {
+  // Accept new clients
+  if (server.available()) {
+    client = server.accept();
+    Serial.println("New WebSocket client connected!");
+  }
+
+  // Handle messages from client
+  if (client.available()) {
+    String message = client.readString();
+    Serial.print("Received: ");
+    Serial.println(message);
+
+    // Echo back
+    client.send("ACK: " + message);
+  }
+
+  // Optional: handle disconnected clients
+  if (client.status() != WebsocketsClient::Status::Connected && client.available() == false) {
+    // Client disconnected
+  }
+}
+
+```
