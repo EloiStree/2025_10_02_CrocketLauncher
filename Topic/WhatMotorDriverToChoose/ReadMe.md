@@ -49,3 +49,6 @@ https://youtu.be/ygrsIqWOh3Y?t=3599
 
 
 
+
+[<img width="607" height="289" alt="image" src="https://github.com/user-attachments/assets/4c85a6ce-f4c2-4865-b94e-9e599ff79e3d" />](https://youtu.be/ygrsIqWOh3Y?t=3618)  
+https://youtu.be/ygrsIqWOh3Y?t=3618    
