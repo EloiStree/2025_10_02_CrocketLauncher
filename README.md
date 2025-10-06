@@ -2,6 +2,14 @@
 The challenge of the mini hackathon is to allow disabled people to treat/feed the dog with a kibble dispenser.
 
 
+
+Postmortem of idea I had on the launching:
+[<img width="1798" height="829" alt="image" src="https://github.com/user-attachments/assets/6405b5f8-1e12-4049-936f-56fc12d71fc9" />](https://youtu.be/YumknEFgoxs
+)  
+https://youtu.be/YumknEFgoxs  
+
+
+
 --- 
 
 # Seal a tube 
