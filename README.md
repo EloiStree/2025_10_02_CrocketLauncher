@@ -18,6 +18,10 @@ I was assigned to an other challenge. Close a tube with bluetooth.
 [<img width="520" height="338" alt="image" src="https://github.com/user-attachments/assets/2c24c6c2-685a-4c10-bb57-2e65beb0bdc6" />](https://www.youtube.com/shorts/wond8kS3s6E?t=6&feature=share)  
 https://www.youtube.com/shorts/wond8kS3s6E?t=6&feature=share  
 
+<img width="1822" height="845" alt="image" src="https://github.com/user-attachments/assets/2a32a10c-ced4-4d4c-b878-948e90951431" />
+add video link
+
+
 The hardware is almost the same as if you would launch crocket.
 
 
