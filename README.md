@@ -1,5 +1,7 @@
 # Project: Noa(h) 
 
+> The Git repository is named "Crocket Launcher" because I originally anticipated working on a project related to feeding an assistance dog 😉🥩🚀🐶
+
 Hackathon day one version of the concept:    
 [<img width="520" height="338" alt="image" src="https://github.com/user-attachments/assets/2c24c6c2-685a-4c10-bb57-2e65beb0bdc6" />](https://www.youtube.com/shorts/wond8kS3s6E?t=6&feature=share)    
 https://www.youtube.com/shorts/wond8kS3s6E?t=6&feature=share    
@@ -11,8 +13,13 @@ https://www.youtube.com/shorts/wond8kS3s6E?t=6&feature=share
 <img width="1031" height="603" alt="image" src="https://github.com/user-attachments/assets/63ebeeea-7bbd-4d78-94e8-582aedea612d" />
 <img width="1822" height="845" alt="image" src="https://github.com/user-attachments/assets/2a32a10c-ced4-4d4c-b878-948e90951431" />
 
-The hardware is almost the same as if you would launch crocket.
 
+
+
+--------------------
+
+<img width="1055" height="211" alt="image" src="https://github.com/user-attachments/assets/94d49479-6db7-43af-8ae1-7b938871eaa6" />  
+<img width="1072" height="180" alt="image" src="https://github.com/user-attachments/assets/36676e9c-c0cb-4902-93be-477eeb502f26" />  
 
 ----------
 
