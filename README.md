@@ -1,16 +1,7 @@
 # Crocket Launcher
 The challenge of the mini hackathon is to allow disabled people to treat/feed the dog with a kibble dispenser.
-
-
-
-Postmortem of idea I had on the launching:
-[<img width="1798" height="829" alt="image" src="https://github.com/user-attachments/assets/6405b5f8-1e12-4049-936f-56fc12d71fc9" />](https://youtu.be/YumknEFgoxs
-)  
-https://youtu.be/YumknEFgoxs  
-
-
-
-
+   
+  
 
 
 --- 
@@ -72,3 +63,11 @@ https://www.amazon.com.be/Brushless-Wear-Resistant-Compatible-Controlled-Aircraf
 
 <img width="1141" height="523" alt="image" src="https://github.com/user-attachments/assets/18e04a5b-47b5-4183-bbf3-892a5a994ca0" />
 https://www.amazon.com.be/-/en/1024GA20-Electric-Motor-Torque-Reduction/dp/B07JBQ6BH2/ref=sr_1_2?crid=19SCZEPO0XMNC&dib=eyJ2IjoiMSJ9.xhF1uyLEHJ_oQ5NYBAhKXOo-rrk7N2R6st7yrE2NT8NjONBr2gryXpLzHw2-PUCi.ZPSayZYSVT4i44yNWbDLMjLkCEYAfppGZpk2Czni4Fg&dib_tag=se&keywords=high+torque+motor+airsoft&qid=1759390333&s=industrial&sprefix=high+torque+motor+airsoft%2Cindustrial%2C157&sr=1-2
+
+
+
+------------------------
+
+[<img width="1798" height="829" alt="image" src="https://github.com/user-attachments/assets/6405b5f8-1e12-4049-936f-56fc12d71fc9" />](https://youtu.be/YumknEFgoxs
+)  
+https://youtu.be/YumknEFgoxs  
