@@ -1,10 +1,8 @@
 # Project: Noa(h) 
 
-I was assigned to an other challenge. Close a tube with bluetooth.
-[<img width="520" height="338" alt="image" src="https://github.com/user-attachments/assets/2c24c6c2-685a-4c10-bb57-2e65beb0bdc6" />](https://www.youtube.com/shorts/wond8kS3s6E?t=6&feature=share)  
-https://www.youtube.com/shorts/wond8kS3s6E?t=6&feature=share  
-
-add video link
+Hackathon day one version of the concept:    
+[<img width="520" height="338" alt="image" src="https://github.com/user-attachments/assets/2c24c6c2-685a-4c10-bb57-2e65beb0bdc6" />](https://www.youtube.com/shorts/wond8kS3s6E?t=6&feature=share)    
+https://www.youtube.com/shorts/wond8kS3s6E?t=6&feature=share    
 
 
 ![a](https://github.com/user-attachments/assets/a68fcee6-2e33-493f-9f11-8b146902a1a0)
