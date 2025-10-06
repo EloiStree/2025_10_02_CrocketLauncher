@@ -21,14 +21,14 @@ I was assigned to an other challenge. Close a tube with bluetooth.
 [<img width="520" height="338" alt="image" src="https://github.com/user-attachments/assets/2c24c6c2-685a-4c10-bb57-2e65beb0bdc6" />](https://www.youtube.com/shorts/wond8kS3s6E?t=6&feature=share)  
 https://www.youtube.com/shorts/wond8kS3s6E?t=6&feature=share  
 
-<img width="1822" height="845" alt="image" src="https://github.com/user-attachments/assets/2a32a10c-ced4-4d4c-b878-948e90951431" />
 add video link
 
-<img width="1031" height="603" alt="image" src="https://github.com/user-attachments/assets/63ebeeea-7bbd-4d78-94e8-582aedea612d" />
 
 ![a](https://github.com/user-attachments/assets/a68fcee6-2e33-493f-9f11-8b146902a1a0)
 ![b](https://github.com/user-attachments/assets/a63f58f9-4d0a-4a07-9d9a-a3479a270f4f)
 <img width="806" height="604" alt="image" src="https://github.com/user-attachments/assets/8ceb5665-03a2-4b19-9996-28a812cb6560" />
+<img width="1031" height="603" alt="image" src="https://github.com/user-attachments/assets/63ebeeea-7bbd-4d78-94e8-582aedea612d" />
+<img width="1822" height="845" alt="image" src="https://github.com/user-attachments/assets/2a32a10c-ced4-4d4c-b878-948e90951431" />
 
 The hardware is almost the same as if you would launch crocket.
 
