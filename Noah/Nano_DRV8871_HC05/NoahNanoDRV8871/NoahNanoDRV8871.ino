@@ -114,12 +114,8 @@ void release() {
 
 void loop() {
 
-    press();
-    delay(3000);
-    release();
-    delay(3000);
 
-  // // Button handling with internal pull-up (LOW = pressed)
+  // Button handling with internal pull-up (LOW = pressed)
   // if (digitalRead(MANUAL_BUTTON_PIN) == LOW && digitalRead(MANUAL_BUTTON_MIDI) == LOW) {
   //   if (!var_is_pressing) {
   //     press();
@@ -129,28 +125,44 @@ void loop() {
   //   }
   // }
 
-  //  if (Serial.available()) {
-  //     // Read the incoming data and send it to the Serial monitor
-  //     byte incomingByte = Serial.read();
-  //       char c = (char)incomingByte;
-  //       Serial.print("Received: ");
-  //       Serial.println(c);
-  // }
+    if (Serial.available()) {
+       // Read the incoming data and send it to the Serial monitor
+       byte incomingByte = Serial.read();
+         char c = (char)incomingByte;
+         Serial.print("Received: ");
+         Serial.println(c);
+   }
 
 
-  // // UART2 handling
-  // if (BT.available()) {
-  //       byte incomingByte = BT.read();
-  //       BT.write(incomingByte);
-  //     char c = (char) byte;
-  //     Serial.print("UART2 received: ");
-  //     Serial.println(c);
+   // UART2 handling
+   if (BT.available()) {
+       byte incomingByte = BT.read();
+       BT.write(incomingByte);
+       char c = (char) incomingByte;
+       Serial.print("UART2 received: ");
+       Serial.println(c);
 
-  //     if (c == '1' || c == 'u' || c == 'U') {
-  //       press();
-  //     } 
-  //     else if (c == '0' || c == 'd' || c == 'D') {
-  //       release();
-  //     }
-  // }
+       if (c == '1' || c == 'u' || c == 'U') {
+         press();
+      } 
+       else if (c == '0' || c == 'd' || c == 'D') {
+        
+         release();
+       }else if ( c == 't' || c == 'T') {
+
+        press();
+        delay(2000);
+        release();
+        delay(2000);
+       }
+       else if ( c == 'r' || c == 'R') {
+
+        release();
+        delay(5000);
+        press();
+        delay(2000);
+       }
+
+       
+   }
 }
