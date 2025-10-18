@@ -1,11 +1,10 @@
 #include <SoftwareSerial.h>
 #include <avr/sleep.h>
 
-#define RXD2 3
-#define TXD2 2
+#define RXD2 5
+#define TXD2 3
 SoftwareSerial BT(RXD2, TXD2);  // RX, TX
 
-#define LED 13
 #define DRV8871_PIN1 11
 #define DRV8871_PIN2 10
 
@@ -24,7 +23,6 @@ unsigned long actionStart = 0;
 unsigned long waitStart = 0;
 
 void setup() {
-    pinMode(LED, OUTPUT);
     pinMode(DRV8871_PIN1, OUTPUT);
     pinMode(DRV8871_PIN2, OUTPUT);
 
@@ -52,7 +50,6 @@ void DRV8871_stop() {
 void startPress() {
     var_is_pressing = true;
     pressing = true;
-    digitalWrite(LED, HIGH);
     DRV8871_start_pressing();
     actionStart = millis();
     motorRunning = true;
@@ -61,7 +58,6 @@ void startPress() {
 void startRelease() {
     var_is_pressing = false;
     pressing = false;
-    digitalWrite(LED, LOW);
     DRV8871_start_releasing();
     actionStart = millis();
     motorRunning = true;
@@ -101,7 +97,6 @@ void loop() {
 
         if (c == '1' || c == 'u' || c == 'U') startPress();
         else if (c == '0' || c == 'd' || c == 'D') startRelease();
-        else if (c == 't' || c == 'T') startPress();
         else if (c == 'r' || c == 'R') {
             // Start the release, then wait n seconds before pressing again
             startRelease();
