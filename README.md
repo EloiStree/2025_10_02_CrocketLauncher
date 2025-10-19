@@ -1,3 +1,12 @@
+Dont event start this project without seeing this video
+[<img width="1352" height="864" alt="image" src="https://github.com/user-attachments/assets/4e8ed7e2-71d8-4d2e-9aef-225aaf0d2a24" />](https://youtu.be/136NfHIPQcE?t=338)
+https://youtu.be/136NfHIPQcE?t=338   
+It is the perfect video to have good understanding of DIY motor for your project.  
+
+
+
+---------------
+
 # Project: Noa(h) 
 
 > The Git repository is named "Crocket Launcher" because I originally anticipated working on a project related to feeding an assistance dog 😉🥩🚀🐶
